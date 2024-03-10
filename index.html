@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Template - 1 -</title>
+    <title>Ring and We are on it</title>
     <link rel="icon" type="image/png" href="https://servi-tek.net/wp-content/uploads/2019/10/Servi-tek-logo-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,70 +52,222 @@
             border-spacing: 0;
         }
         .container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .container img {
-            width: 100%;
-            height: 100%;
-        }
-        .inner {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            margin-left: 55%;
-            margin-top: 85%; /* Push the inner div to the bottom */
-            text-align: center; /* Align content center horizontally */
-        }
-        .book-now {
             width: 50% !important;
-            height: 5% !important;
-            display: inline-block; /* Change display property to inline-block */
-            cursor: pointer;
+        margin: auto;
+        background-image: url('https://servi-tek.net/wp-content/uploads/2019/07/Copy-of-Corporate-Blue-Wave-Shape-Long-Email-Newsletter-8.webp');
+        padding: 2% 0% 2% 0%;
+        background-size: cover;
+        height: auto;
         }
-        .book-now:hover
+        .logo 
         {
-            filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+            width: auto;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
         }
-        .icon
+        .logo img{
+            width: 40%;
+            display: flex;
+            margin: auto;
+        }
+        .logo-text{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+        }
+        .logo-text img{
+            width: 70%;
+            display: flex;
+            margin: 5% auto 5% auto;
+        }
+        .book-now
         {
-            position: absolute;
+            width: 100%;
+            text-align: right; /* align to right */
+            position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+        }
+        .book-now img
+        {
+            margin: 35% 5% 0% 0%;
+            max-width: 30%;
+            padding: 2%;
+            height: auto;
+            cursor: pointer;   
+            transition: transform 0.3s ease; /* Add smooth transition */
+        }
+        .book-now img:hover
+{
+    transform: scale(1.1); /* Increase size */
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.1)); /* Apply filter and drop shadow */
+
+}
+.content
+{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+}
+.content img{
+    width: 90%;
+    display: flex;
+    margin: 5% auto 0% auto;
+}
+.inner-content{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+}
+.inner-content img{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 1%;
+}
+.footer
+{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+}
+.footer img{
+    width: 100%;
+    margin: auto;
+
+}
+.icon
+        {
             top: 0;
             left: 0;
             width: 100%;
+            margin: 5% 0% 0% 0%;
             z-index: 1;
-            margin-top: 240%; /* Push the inner div to the bottom */
-            margin-left: auto;
-            margin-right: auto;
             text-align: center; /* Align content center horizontally */
+            position: relative;
+    opacity: 0; /* Initially, set opacity to 0 */
+    animation: fadeInFromTop 2s ease-in-out forwards;
+
+        }
+        .icon i
+        {
+            font-size: 3vw;
+            padding: 0% 2% 0% 2%;
+            color: white;   
+        }
+        .icon i:hover
+        {
+            color: #FBBD00;
+        }
+        .icon a
+        {
+            text-decoration: none;
+        }
+        @keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+            /* For tablets */
+@media (max-width: 1024px) {
+    .container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .icon i {
+        font-size: 60px;
+    }
+}
+@media (max-width: 1000px){
+            .icon i{
+                font-size: 50px;
+            }
+        }
+        @media (max-width: 800px) {
+            .icon i{
+                font-size: 40px;
+            }
+        }
+        @media (max-width: 650px) {
+            .icon i{
+                font-size: 30px;
+            }
             
         }
-        .icon img
-        {
-            width: 5% !important;
-            margin-left: 1%;
-            margin-right: 1%;
-        }
+        @media (max-width: 500px){
+    .icon i{
+        font-size: 20px;
+    }
+}
+@media (max-width: 200px) {
+    .icon i{
+        font-size: 15px;
+    }
+}
+@media (max-width: 175px){
+    .icon i {
+        font-size: 10px;
+    }
+} 
+
+       
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://servi-tek.net/wp-content/uploads/2019/07/email-template-last.webp" class="campaign">    
-        <div class="inner">
-            <a href="https://servi-tek.net/contact-us/#vc_row-65e0a2d20fd7c"><img src="https://servi-tek.net/wp-content/uploads/2019/07/95-6.webp" class="book-now"></a>
+        <div class="inner-container">
+        <div class="logo">
+            <a href="https://servi-tek.net/"><img src="https://servi-tek.net/wp-content/uploads/2019/07/Logo-with-GBAC-WHITE.png">
+        </a></div>
+        <div class="logo-text">
+            <img src="https://servi-tek.net/wp-content/uploads/2019/07/95-13-e1710093904111.webp">
+        </div>
+        <div class="book-now">
+            <a href="tel:619.391.9363"><img src="https://servi-tek.net/wp-content/uploads/2019/07/95-6.webp" alt=""></a>
+        </div>
+        <div class="content">
+            <img src="https://servi-tek.net/wp-content/uploads/2019/07/95-14-e1710094268592.png">
+            <div class="inner-content">
+                <img src="https://servi-tek.net/wp-content/uploads/2019/07/RANYAN-3-e1710094601152.webp">
+            </div>
+        </div>
+        <div class="footer">
+            <img src="https://servi-tek.net/wp-content/uploads/2019/07/95-15-e1710094715142.webp">
         </div>
         <div class="icon">
-            <a href="https://www.facebook.com/ServiTekFacilitySolutions/"><img src="https://servi-tek.net/wp-content/uploads/2019/07/fb-white.png" class="facebook"></a>
-            <a href="https://www.linkedin.com/company/servi-tek"><img src="https://servi-tek.net/wp-content/uploads/2019/07/ln-white.png" class="linkedin"></a>
-            <a href="https://twitter.com/ServiTekCA"><img src="https://servi-tek.net/wp-content/uploads/2019/07/x-white.png" class="twitter"></a>
-            <a href="https://www.youtube.com/channel/UCJlLJzzV7oSo0o8cxtoqS1g"><img src="https://servi-tek.net/wp-content/uploads/2019/07/yt-white.png" class="youtube"></a>
-            <a href="https://www.instagram.com/servitek_facility_solutions/"><img src="https://servi-tek.net/wp-content/uploads/2019/07/ig-white.png" class="instagram"></a>
-            <a href="https://www.pinterest.ph/ServiTekFacilitySolutions/"><img src="https://servi-tek.net/wp-content/uploads/2019/07/pi-white.png" class="pinterest"></a>
-
+            <a href="https://www.facebook.com/ServiTekFacilitySolutions/"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/company/servi-tek"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://twitter.com/ServiTekCA"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCJlLJzzV7oSo0o8cxtoqS1g"><i class='fab fa-youtube'></i></a>
+            <a href="https://www.instagram.com/servitek_facility_solutions/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.pinterest.ph/ServiTekFacilitySolutions/"><i class="fa fa-pinterest"></i></a>
+        </div>
         </div>
     </div>
-    
 </body>
 </html>
